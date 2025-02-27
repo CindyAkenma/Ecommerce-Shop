@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products Shop</title>
+    <link rel="stylesheet" href="oriflame.css">
+</head>
+<body>
+    <header>
+        <h1>Sisi's BeautyBay</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#skincare">Skincare & Body</a></li>
+                <li><a href="#fragrance">Fragrance</a></li>
+                <li><a href="#haircare">Hair Care</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Skincare Section -->
+        <section id="skincare">
+            <h2>Skincare & Body Products</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="images/Glow essential body lotion.jpg" alt="Glow essential body lotion">
+                    <h3>Glow essential body lotion</h3>
+                    <p>GHC 189.00</p>
+                    <div class="description-text" style="display: none;">
+                        A nourishing body lotion for glowing skin.Body lotion designed to moisturise, protect and provide glowing skin.
+                        With Vitamin B3 that helps to even out skin tone and antioxidant Vitamin E.
+                        Hydrates skin instantly and for up to 24 hours
+                        Helps skin appear visibly more radiant.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Glow essential body lotion', 189)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/e2895187bc3886f65956edeb057eac0f.jpg" alt="Tendercare Balm">
+                    <h3>Tendercare Balm</h3>
+                    <p>GHC 95.00</p>
+                    <div class="description-text" style="display: none;">
+                        A versatile balm that soothes dry skin and provides essential hydration.Use on dry skin, lips, cuticles, hands, eyebrows, elbows and feet.99.9% natural origin formula.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Tendercare Balm', 95)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle teenage gentle wash.jpg" alt="Feminelle teenage gentle wash">
+                    <h3>Feminelle teenage gentle wash</h3>
+                    <p>GHC 165.00</p>
+                    <div class="description-text" style="display: none;">
+                        A gentle wash suitable for teenage skin.Extra mild intimate wash that cleanses and cares for your skin while protecting against odour and discomfort.
+                        Specially formulated for girls aged 13-18.
+                        </div>
+                    <button class="purchase-button" onclick="purchase('Feminelle teenage gentle wash', 165)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle extracomfort nurturing wash.jpg" alt="Feminelle extracomfort nurturing wash">
+                    <h3>Feminelle extracomfort nurturing wash</h3>
+                    <p>GHC 165.00</p>
+                    <div class="description-text" style="display: none;">
+                        Scented intimate cleansing cream infused with ingredients to protect the intimate area from odour and encourage healthy skin.
+                        Calendula extract leaves skin feeling soft and smooth
+                        Moisture Complex, Glycerine and D-Panthenol for exceptional moisturising.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Feminelle extracomfort nurturing wash', 165)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle protecting wash.jpg" alt="Feminelle protecting wash">
+                    <h3>Feminelle protecting wash</h3>
+                    <p>GHC 165.00</p>
+                    <div class="description-text" style="display: none;">
+                        Gentle, soap-free intimate wash that cleanses and cares for your skin while protecting against odour and discomfort.
+                        Soft and silky gel ideal for daily use
+                        Cranberry extract helps protect and support healthy skin.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Feminelle protecting wash', 165)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Feminelle soothing aloe wash.jpg" alt="Feminelle soothing aloe wash">
+                    <h3>Feminelle soothing aloe wash</h3>
+                    <p>GHC 165.00</p>
+                    <div class="description-text" style="display: none;">
+                        Extra soothing intimate wash that cleanses and cares for your skin while protecting against odour and discomfort.
+                        Aloe Vera and Mallow extracts help soothe and calm skin
+                        Cranberry extract helps protect and support healthy skin.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Feminelle soothing aloe wash', 165)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/love Nature Purifyiing set.jpg" alt="love Nature Purifyiing set">
+                    <h3>love Nature Purifyiing set</h3>
+                    <p>GHC 715.00</p>
+                    <div class="description-text" style="display: none;">
+                        Perfect for oily skin, this delicately scented toner cleanses and purifies while controlling blemishes.
+                        Lightweight, scented, purifying lotion that controls blemishes and leaves skin lightly hydrated and free from shine.
+                        Tea Tree oil and salicylic acid target blemishes.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('love Nature Purifyiing set', 715)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/NovAge men set.jpg" alt="NovAge men set">
+                    <h3>NovAge men set</h3>
+                    <p>GHC 1,691.00</p>
+                    <div class="description-text" style="display: none;">
+                        Anti-ageing skin care set engineered specifically for men's skin to fight signs of ageing and tiredness, to achieve fresher, younger-looking and smoother skin.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('NovAge men set', 1,691)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Activelle deodorant.jpg" alt="Activelle deodorant">
+                    <h3>Activelle deodorant</h3>
+                    <p>GHC 84.00</p>
+                    <div class="description-text" style="display: none;">
+                        A long-lasting deodorant for daily use.Enjoy a burst of freshness when you need it most with this roll on anti-perspirant deodorant that doesn’t leave white marks on your clothes.
+                        48h non-stop deodorising protection
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Activelle deodorant', 84)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Activelle even out deodorant.jpg" alt="Activelle even out deodorant">
+                    <h3>Activelle even out deodorant</h3>
+                    <p>GHC 84.00</p>
+                    <div class="description-text" style="display: none;">
+                        Stay confidently fresh with this anti-perspirant deodorant that also helps even out underam skin tone.
+                        48 hour non-stop deodorising protection
+                        Even tone technology: Helps restore underarm skin tone in 14 days.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Activelle even out deodorant', 84)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Activelle extreme deodorant.jpg" alt="Activelle extreme deodorant">
+                    <h3>Activelle extreme deodorant</h3>
+                    <p>GHC 84.00</p>
+                    <div class="description-text" style="display: none;">
+                        Perfect for women on the go, this long-lasting anti-perspirant gives maximum protection as well as a powdery citrus scent.
+                        Immediate protection that lasts up to 72h
+                        Controls bad odour and excessive sweat, no matter what
+                        Dry action: keeps your armpits always dry.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Activelle extreme deodorant', 84)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature body lotion.jpg" alt="Love nature body lotion">
+                    <h3>Love nature body lotion</h3>
+                    <p>GHC 412.00</p>
+                    <div class="description-text" style="display: none;">
+                        Treat your dry skin to some natural nourishment with this creamy and hydrating body lotion infused with natural organic cacao butter and coconut oil.
+                        Provides 24 hours hydration for extra dry skin
+                        Contains natural organic cacao butter and coconut oil, and 94% natural origin ingredients
+                        Fast absorbing formula with a creamy, gourmand scent.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature body lotion', 412)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+
+                <div class="product">
+                    <img src="images/optifresh kid tooth psate.jpg" alt="optifresh kid tooth paste">
+                    <h3>optifresh kid tooth paste</h3>
+                    <p>GHC 40.00</p>
+                    <div class="description-text" style="display: none;">
+                    </div>
+                        A toothpaste specially designed for kids.
+                    <button class="purchase-button" onclick="purchase('optifresh kid tooth paste', 40)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh tooth paste white.jpg" alt="optifresh tooth paste white">
+                    <h3>optifresh tooth paste white</h3>
+                    <p>GHC 83.00</p>
+                    <div class="description-text" style="display: none;">
+                        A toothpaste for whitening teeth.
+                        </div>
+                    <button class="purchase-button" onclick="purchase('optifresh tooth paste white', 120)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh maximum tooth paste.jpg" alt="optifresh maximum tooth paste">
+                    <h3>optifresh maximum tooth paste</h3>
+                    <p>GHC 83.00</p>
+                    <div class="description-text" style="display: none;">
+                        A maximum protection toothpaste.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('optifresh maximum tooth paste', 83)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh sensitive.jpg" alt="optifresh sensitive">
+                    <h3>optifresh sensitive</h3>
+                    <p>GHC 83.00</p>
+                    <div class="description-text" style="display: none;">
+                        A toothpaste for sensitive teeth.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('optifresh maximum tooth paste', 83)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/optifresh natural oils tooth paste.jpg" alt="optifresh natural oils tooth paste">
+                    <h3>optifresh natural oils tooth paste</h3>
+                    <p>GHC 83.00</p>
+                    <div class="description-text" style="display: none;">
+                        A toothpaste enriched with natural oils
+                    </div>
+                    <button class="purchase-button" onclick="purchase('optifresh natural oils tooth paste', 83)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/fb1ba64209110d3e60f0d0d73cdb0a2f.jpg" alt="Pureskin set">
+                    <h3>Pureskin set</h3>
+                    <p>GHC 719.00</p>
+                    <div class="description-text" style="display: none;">
+                        Perfect for oily skin, this delicately scented toner cleanses and purifies while controlling blemishes.
+                        Lightweight, scented, purifying lotion that controls blemishes and leaves skin lightly hydrated and free from shine.
+                        Tea Tree oil and salicylic acid target blemishes.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Pureskin set', 719)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fragrance Section -->
+        <section id="fragrance">
+            <h2>Fragrance Products</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="images/Giordani Gold.jpg" alt="Giordani Gold">
+                    <h3>Giordani Gold</h3>
+                    <p>GHC 500.00</p>
+                    <div class="description-text" style="display: none;">
+                        A luxurious fragrance for men.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Giordani Gold', 500)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Giordan Gold for women.jpg" alt="Giordani Gold for women">
+                    <h3>Giordani Gold for women</h3>
+                    <p>GHC 720.00</p>
+                    <div class="description-text" style="display: none;">
+                        A luxurious fragrance for women.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Giordani Gold for women', 720)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Macnetista perfume.jpg" alt="Macnetista perfume">
+                    <h3>Macnetista perfume</h3>
+                    <p>GHC 599.00</p>
+                    <div class="description-text" style="display: none;">
+                        A captivating fragrance for all occasions.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Macnetista perfume', 599)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Whispers of me.jpg" alt="Whispers of me">
+                    <h3>Whispers of me</h3>
+                    <p>GHC 599.00</p>
+                    <div class="description-text" style="display: none;">
+                        A delicate and enchanting fragrance.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Whispers of me', 599)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/ffbbc49b1df1ad6464d0b66b0b1014e8.jpg" alt="Oh Sweet">
+                    <h3>Oh Sweet</h3>
+                    <p>GHC 383.00</p>
+                    <div class="description-text" style="display: none;">
+                        A sweet and irresistible fragrance.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Oh Sweet', 383)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Perfume.jpg" alt="Love Portion Eau de Parfum">
+                    <h3>Love Portion Eau de Parfum</h3>
+                    <p>GHC 599.00</p>
+                    <div class="description-text" style="display: none;">
+                        A romantic and alluring fragrance
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love Portion Eau de Parfum', 599)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/b1636823488c687c0a4668a666ac6e79.jpg" alt="Infinita Eau de Parfum<">
+                    <h3>Infinita Eau de Parfum<</h3>
+                    <p>GHC 599.00</p>
+                    <div class="description-text" style="display: none;">
+                        An infinite and timeless fragrance.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Infinita Eau de Parfum<', 599)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Fragance.jpg" alt="Divine Exclusive Eau de Parfum">
+                    <h3>Divine Exclusive Eau de Parfum</h3>
+                    <p>GHC 865.00</p>
+                    <div class="description-text" style="display: none;">
+                        A divine and exclusive fragrance.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Divine Exclusive Eau de Parfum', 865)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/ECLAS Toujours.jpg" alt="Eclat Toujours Eau de Toilette">
+                    <h3>Eclat Toujours Eau de Toilette</h3>
+                    <p>GHC 430.00</p>
+                    <div class="description-text" style="display: none;">
+                        A sparkling and refreshing fragrance
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Eclat Toujours Eau de Toilette', 430)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Possess.jpg" alt="Possess Absolute Man Eau de Parfum">
+                    <h3>Possess Absolute Man Eau de Parfum</h3>
+                    <p>GHC 719.00</p>
+                    <div class="description-text" style="display: none;">
+                        A bold and masculine fragrance.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Possess Absolute Man Eau de Parfum', 719)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                
+                <!-- Add 9 more fragrance products here -->
+            </div>
+        </section>
+
+        <!-- Hair Care Section -->
+        <section id="haircare">
+            <h2>Hair Care Products</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="images/Love nature hot oil oconut.jpg" alt="Love nature hot oil Coconut">
+                    <h3>Love nature hot oil Coconut</h3>
+                    <p>GHC 54.00</p>
+                    <div class="description-text" style="display: none;">
+                        Treat your dry and damaged hair to this non greasy and lightweight hot oil, with natural organic wheat and coconut oil. Moisturises and conditions dry and damaged hair With natural organic wheat and coconut oil.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature hot oil Coconut', 54)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature shampoo and conditioner for dry hair.jpg" alt="Love nature shampoo and conditioner for dry hair">
+                    <h3>Love nature shampoo and conditioner for dry hair</h3>
+                    <p>GHC 310.00</p>
+                    <div class="description-text" style="display: none;">
+                        Intensively condition and nourish your dry or damaged hair with a conditioner infused with natural organic wheat and coconut oil. Leaves hair feeling soft and strong.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature shampoo and conditioner for dry hair', 310)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature nourishing hair oil.jpg" alt="Love nature nourishing coconu hair oil">
+                    <h3>Love nature nourishing Coconut hair oil</h3>
+                    <p>GHC 179.00</p>
+                    <div class="description-text" style="display: none;">
+                        Replenish your dry and damaged hair with this silky smooth hair oil containing natural coconut oil. Moisturises dry and damaged hair and helps prevent dandruff With natural coconut oil 99% natural origin ingredients.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature nourishing coconu hair oil', 179)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature body, face and hair oil.jpg" alt="Love nature body, face and hair oil">
+                    <h3>Love nature body, face and hair oil</h3>
+                    <p>GHC 179.00</p>
+                    <div class="description-text" style="display: none;">
+                        Nurturing body, face and hair oil that moisturises and softens with Organic Olive Oil. Thoughtfully designed formula that brings nature’s goodness directly into your self-care routine! Formulated with organic oils to help protect skin and hair 95% Natural origin ingredients 50% Recycled plastic bottle.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature body, face and hair oil', 179)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature Avocado.jpg" alt="Love nature Avocado Oil">
+                    <h3>Love nature Avocado Oil</h3>
+                    <p>GHC 179.00</p>
+                    <div class="description-text" style="display: none;">
+                        Nurturing body, face and hair oil that moisturises and softens with Organic Avocado Oil. Thoughtfully designed formula that brings nature’s goodness directly into your self-care routine! Formulated with organic oils to help protect skin and hair 95% Natural origin ingredients 50% Recycled plastic bottle.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature Avocado Oil', 179)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Love nature shampoo for dandruff.jpg" alt="Love nature shampoo for dandruff">
+                    <h3>Love nature shampoo for dandruff</h3>
+                    <p>GHC 200.00</p>
+                    <div class="description-text" style="display: none;">
+                        Formulated with potent ingredients like Salicylic Acid, Piroctone Olamine, and Glycerine, these shampoos effectively combat dandruff, remove flakes, and soothe scalp irritation.
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Love nature shampoo for dandruff', 200)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                
+                <!-- Add 9 more haircare products here -->
+            </div>
+        </section>
+
+        <!-- Nutrition Section -->
+        <section id="nutrition">
+            <h2>Nutrition Products</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product">
+                    <img src="images/wellness pack for man.jpg" alt="wellness pack for man">
+                    <h3>wellness pack for man</h3>
+                    <p>GHC 899.00</p>
+                    <div class="description-text" style="display: none;">
+                        Convenient daily pack of dietary supplements to support overall health and wellbeing. 1x multivitamin tablet with 22 essential vitamins and minerals, 2x omega-3 capsules and 1x broad-spectrum antioxidant capsule with natural astaxanthin. Precision-formulated to support the nutritional needs of men
+                    </div>
+                    <button class="purchase-button" onclick="purchase('wellness pack for man', 300)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/Welness pack for woman.jpg" alt="Wellness Pack for Women">
+                    <h3>Wellness Pack for Women</h3>
+                    <p>GHC 899.00</p>
+                    <div class="description-text" style="display: none;">
+                        Convenient daily pack of dietary supplements to support overall health and wellbeing. 1x multivitamin tablet with 22 essential vitamins and minerals, 2x omega-3 capsules and 1x broad-spectrum antioxidant capsule with natural astaxanthin. Precision-formulated to support the nutritional needs of women
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Wellness Pack for Women', 300)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                
+                <div class="product">
+                    <img src="images/wellosophy meal replacement.jpg" alt="wellosophy meal replacement">
+                    <h3>wellosophy meal replacement</h3>
+                    <p>GHC  1499.00</p>
+                    <div class="description-text" style="display: none;">
+                        A meal replacement for weight loss.Meal replacement shake created by nutritionists to help you lose weight – and keep it off. Replace two main meals a day to lose weight, one to maintain weight. Simply mix with dairy or soy milk alternative for a nutritionally complete meal. Healthy, and so easy! High in protein and a source of dietary fibre with vitamins and minerals
+                    </div>
+                    <button class="purchase-button" onclick="purchase('wellosophy meal replacement', 300)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/OMEGA.jpg" alt="Omega-3">
+                    <h3>Omega-3</h3>
+                    <p>GHC 610.00</p>
+                    <div class="description-text" style="display: none;">
+                        Omega-3 supplements for heart and brain health.Quality fish oil food supplement with the omega-3s EPA and DHA in a soft gel capsule. EPA and DHA contribute to the normal function of the heart. DHA contributes to maintenance of normal brain function and normal vision. Your daily dose of EPA and DHA! Two capsules daily provide 250mg EPA and DHA
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Omega-3', 300)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                <div class="product">
+                    <img src="images/wellosophy astaxanthin.jpg" alt="Wellosophy astaxanthin">
+                    <h3>Wellosophy astaxanthin</h3>
+                    <p>GHC 659.00</p>
+                    <div class="description-text" style="display: none;">
+                        Daily antioxidant food supplement. Combination of antioxidants, including natural Astaxanthin, Bilberry extract and Vitamins C and E. Helps protect your body’s cells against damaging free radicals. Astaxanthin – one of nature’s most powerful antioxidants (Nishida et al., 2007) Bilberry – one of the richest sources of anthocyanins (Bornsek et al., 2012)
+                    </div>
+                    <button class="purchase-button" onclick="purchase('Wellosophy astaxanthin', 300)">Purchase</button>
+                    <button class="description-button" onclick="toggleDescription(this)">Description</button>
+                </div>
+                
+
+                
+                <!-- Add 9 more nutrition products here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us on WhatsApp!</p>
+            <a href="https://wa.me/233551972704?text=Hello%20Beauty%20Products%20Shop,%20I%20have%20a%20question." class="whatsapp-button">Chat on WhatsApp</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beauty Products Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="oriflame.js"></script>
+</body>
+</html>
